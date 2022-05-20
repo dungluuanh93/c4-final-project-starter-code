@@ -6,7 +6,8 @@
     "name": {
       "type": "string",
       "pattern": "^[A-Za-z]*$",
-      "minLength": 3
+      "minLength": 3,
+      "maxLength": 200
     },
     "dueDate": {
       "type": "string",
