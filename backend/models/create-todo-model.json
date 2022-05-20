@@ -4,10 +4,13 @@
   "type": "object",
   "properties": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "pattern": "^[A-Za-z]*$",
+      "minLength": 3
     },
     "dueDate": {
-      "type": "string"
+      "type": "string",
+      "pattern": "([12]\\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01]))"
     }
   },
   "required": [
